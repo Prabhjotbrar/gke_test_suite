@@ -18,10 +18,10 @@ the script will deploy load_generating, httpbin and sleep application in 2 diffe
 
 7. pipenv shell ; pipenv install
 
---- Optional- it collects hourly metrics, please run this script after 2hrs after generating the traffic.---
+- Optional- it collects hourly metrics, please run this script after 2hrs after generating the traffic.-
 8. Create a config file with yaml extension and fill out the below content.
 
----
+
 host: "1.2.3.4:8443"
 password: "your-password"
 username: 'admin'
@@ -32,7 +32,7 @@ hours: 2
 output: "./output.csv"
 debug: False
 
----
+
 
 9. python main.py --config <>.yaml
 
