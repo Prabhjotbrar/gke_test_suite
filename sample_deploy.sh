@@ -1,11 +1,11 @@
 #!/bin/bash
 
 kubectl create ns n1
-kubectl apply -f <(istioctl kube-inject -f httpbin.yaml) -n n1
-kubectl apply -f <(istioctl kube-inject -f sleep.yaml) -n n1
+kubectl apply -f <(istioctl kube-inject -f manifest/httpbin.yaml) -n n1
+kubectl apply -f <(istioctl kube-inject -f manifest/sleep.yaml) -n n1
 kubectl create ns n2
-kubectl apply -f <(istioctl kube-inject -f httpbin.yaml) -n n2
-kubectl apply -f <(istioctl kube-inject -f sleep.yaml) -n n2
+kubectl apply -f <(istioctl kube-inject -f manifest/httpbin.yaml) -n n2
+kubectl apply -f <(istioctl kube-inject -f manifest/sleep.yaml) -n n2
 
 echo "Waiting for deployment to come up"
 sleep 10
