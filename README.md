@@ -22,15 +22,17 @@ the script will deploy load_generating, httpbin and sleep application in 2 diffe
 8. Create a config file with yaml extension and fill out the below content
 
 
+---
 host: "1.2.3.4:8443"
 password: "your-password"
 username: 'admin'
 cluster: 'demo'
-service_name: 'httpbin'
-service_list: ''
-hours: 2
+service_name: 'productpage'
+service_list: './spm-services.txt'
+hours: 3
 output: "./output.csv"
 debug: False
+
 
 
 9. python main.py --config <>.yaml
