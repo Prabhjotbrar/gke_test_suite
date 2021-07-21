@@ -1,0 +1,31 @@
+Metrics Name,15:00,16:00,Status,Subset,Service Name/Hostname,Namespace,Cluster,Env
+throughput (rpm),4,12,OK,*,httpbin,n1,demo,-
+response_time (ms),2,2,OK,*,httpbin,n1,demo,-
+service_2xx (rpm),4,12,OK,*,httpbin,n1,demo,-
+service_4xx (rpm),0,0,OK,*,httpbin,n1,demo,-
+service_5xx (rpm),0,0,OK,*,httpbin,n1,demo,-
+throughput (rpm),4,12,OK,*,httpbin,n2,demo,-
+response_time (ms),2,2,OK,*,httpbin,n2,demo,-
+service_2xx (rpm),4,12,OK,*,httpbin,n2,demo,-
+service_4xx (rpm),0,0,OK,*,httpbin,n2,demo,-
+service_5xx (rpm),0,0,OK,*,httpbin,n2,demo,-
+throughput (rpm),4,12,OK,v1,httpbin,n1,demo,-
+response_time (ms),2,2,OK,v1,httpbin,n1,demo,-
+service_2xx (rpm),4,12,OK,v1,httpbin,n1,demo,-
+service_4xx (rpm),0,0,OK,v1,httpbin,n1,demo,-
+service_5xx (rpm),0,0,OK,v1,httpbin,n1,demo,-
+throughput (rpm),0,0,Not OK,v1,httpbin,bar,demo,-
+response_time (ms),0,0,Not OK,v1,httpbin,bar,demo,-
+service_2xx (rpm),0,0,Not OK,v1,httpbin,bar,demo,-
+service_4xx (rpm),0,0,OK,v1,httpbin,bar,demo,-
+service_5xx (rpm),0,0,OK,v1,httpbin,bar,demo,-
+throughput (rpm),0,0,Not OK,v1,httpbin,foo,demo,-
+response_time (ms),0,0,Not OK,v1,httpbin,foo,demo,-
+service_2xx (rpm),0,0,Not OK,v1,httpbin,foo,demo,-
+service_4xx (rpm),0,0,OK,v1,httpbin,foo,demo,-
+service_5xx (rpm),0,0,OK,v1,httpbin,foo,demo,-
+throughput (rpm),4,12,OK,v1,httpbin,n2,demo,-
+response_time (ms),2,2,OK,v1,httpbin,n2,demo,-
+service_2xx (rpm),4,12,OK,v1,httpbin,n2,demo,-
+service_4xx (rpm),0,0,OK,v1,httpbin,n2,demo,-
+service_5xx (rpm),0,0,OK,v1,httpbin,n2,demo,-

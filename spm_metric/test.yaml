@@ -1,0 +1,9 @@
+host: ""
+password: ""
+username: 'admin'
+cluster: 'demo'
+service_name: 'httpbin'
+service_list: ''
+hours: 2
+output: './op1.csv'
+debug: False
